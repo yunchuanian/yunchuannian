@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>云川念旎 · 旎镜</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 头部导航 -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="image/logo.png" alt="云川念旎" class="site-logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link">首页</a ></li>
+                    <li><a href="oc-gallery.html" class="nav-link">念旎阁</a ></li>
+                    <li><a href="worldview.html" class="nav-link">川流集</a ></li>
+                    <li><a href="interactive.html" class="nav-link active">旎镜</a ></li>
+                    <li><a href="stories.html" class="nav-link">云境</a ></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="搜索互动...">
+                <button class="search-btn">搜索</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="container">
+        <h1 class="section-title">旎镜 · 互动专区</h1>
+        
+        <div class="interactive-container" id="interactiveContainer">
+              <!-- 剧场选择导航 -->
+        <nav class="theater-nav">
+            <button class="theater-btn active" data-theater="changan">边缘世界</button>
+            <button class="theater-btn" data-theater="dream">2377世界</button>
+            <button class="theater-btn" data-theater="midnight">Ariadne Bai</button>
+        </nav>
+
+     
+        <!-- 剧场内容将通过JavaScript动态加载 -->
+        <div id="theaterContainer">造梦者.珣</div>
+
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>© 2023 云川念旎 · 版权所有</p >
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/interactive.js"></script>
+</body>
+</html>
