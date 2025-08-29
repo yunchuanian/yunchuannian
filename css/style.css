@@ -325,6 +325,15 @@ blockquote {
     margin-bottom: 3rem;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+.oc-profile {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+}
 
 .oc-image-container {
     width: 300px;
@@ -384,6 +393,7 @@ blockquote {
     margin: 1.5rem 0;
 }
 
+
 .oc-features li {
     padding: 0.5rem 0;
     position: relative;
@@ -397,18 +407,26 @@ blockquote {
     color: #2a5caa;
     font-weight: bold;
 }
-
-/* 响应式设计 */
-@media (max-width: 768px) {
+        
+.oc-image-container {
+    flex: 1;
+    min-height: 400px;
+    background: linear-gradient(135deg, var(--secondary-blue), var(--accent-blue));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+}
+@media (min-width: 900px) {
     .oc-profile {
-        flex-direction: column;
-    }
-    
-    .oc-image-container {
-        width: 100%;
-        height: 300px;
+        flex-direction: row;
     }
 }
+
+   
+
 /* 世界观容器 */
 .worldview-container {
     max-width: 900px;
@@ -422,7 +440,7 @@ blockquote {
     margin-bottom: 2rem;
     font-size: 2rem;
 }
-
+ 
 /* 世界观导航 */
 .worldview-nav {
     display: flex;

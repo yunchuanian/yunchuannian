@@ -32,4 +32,23 @@ function renderWorldviews(worldviews) {
         `;
         container.appendChild(section);
     });
-}// JavaScript Document
+}
+// 初始化
+document.addEventListener('DOMContentLoaded', function() {
+    // 世界观切换
+    const worldviewBtns = document.querySelectorAll('.worldview-btn');
+    worldviewBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // 更新按钮状态
+            worldviewBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            
+            // 切换内容
+            const worldviewId = this.dataset.worldview;
+            document.querySelectorAll('.worldview-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(`${worldviewId}-content`).classList.add('active');
+        });
+    });
+});
